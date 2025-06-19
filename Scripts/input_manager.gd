@@ -40,3 +40,6 @@ func raycast_at_cursor():
 		elif result_collision_mask == COLLISION_MASK_DECK:
 			# Deck clicked
 			deck_reference.draw_card()
+
+func _on_quit_to_main_menu_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scripts/main_menu.tscn")

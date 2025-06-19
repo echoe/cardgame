@@ -16,10 +16,19 @@ size = Vector2(177, 167)
 script = ExtResource("1_aa03v")
 
 [node name="CardSlot" parent="." instance=ExtResource("2_w5bdd")]
-position = Vector2(321, 333)
+position = Vector2(960, 750)
 
 [node name="CardSlot2" parent="." instance=ExtResource("2_w5bdd")]
-position = Vector2(529, 340)
+position = Vector2(780, 750)
+
+[node name="CardSlot3" parent="." instance=ExtResource("2_w5bdd")]
+position = Vector2(600, 750)
+
+[node name="CardSlot4" parent="." instance=ExtResource("2_w5bdd")]
+position = Vector2(1140, 750)
+
+[node name="CardSlot5" parent="." instance=ExtResource("2_w5bdd")]
+position = Vector2(1320, 750)
 
 [node name="PlayerHand" type="Node2D" parent="."]
 script = ExtResource("3_v5bo4")
@@ -51,3 +60,13 @@ text = "0"
 
 [node name="InputManager" type="Node2D" parent="."]
 script = ExtResource("6_ix4gu")
+
+[node name="Quit to Main Menu" type="Button" parent="."]
+offset_left = 1506.0
+offset_top = 972.0
+offset_right = 1660.0
+offset_bottom = 1003.0
+scale = Vector2(2.5, 2.5)
+text = "Quit to Main Menu"
+
+[connection signal="pressed" from="Quit to Main Menu" to="InputManager" method="_on_quit_to_main_menu_pressed"]

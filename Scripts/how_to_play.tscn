@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3wry56b48cmq"]
+
+[ext_resource type="Script" uid="uid://dmyx1bftvnthd" path="res://Scripts/how_to_play.gd" id="1_hkap6"]
+
+[node name="How to Play" type="Node2D"]
+script = ExtResource("1_hkap6")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 32.0
+offset_top = 40.0
+offset_right = 1876.0
+offset_bottom = 934.0
+text = "Information"
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Main Menu" type="Button" parent="."]
+offset_left = 1474.0
+offset_top = 964.0
+offset_right = 1631.0
+offset_bottom = 995.0
+scale = Vector2(2.5, 2.5)
+text = "Back to Main Menu
+"
+
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
