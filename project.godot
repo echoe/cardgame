@@ -13,10 +13,12 @@ config_version=5
 config/name="CardGame"
 run/main_scene="uid://ca5c3flng6855"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://Images/icon.svg"
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/vsync/vsync_mode=0
 
 [rendering]
